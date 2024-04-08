@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moman Necklace</title>
+    <!-- Bootstrap CSS -->
+    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!--font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-12">
+              <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./" style="margin-left: 2px; margin-right:18px;"><b>JEWELLERY</b></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active mx-3" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active mx-3" aria-current="page" href="./jewellery.html">Back</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active mx-3" href="jewellery.html">Women Jewellery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active mx-3" href="./women_earring.html">Women Earring</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active mx-3" href="./women_necklace.html">Women Necklace</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active mx-3" href="./girls_Ring.html">Girls Ring</a>
+                        </li>
+                        <li class="nav-item">
+                          <a id="btndrag" data-bs-toggle="modal" data-bs-target="#cart-modal"
+                              class="nav-link bt text-white bg-secondary" href="#"
+                              style="border-radius:4px;">View <i
+                                  class="fa-solid fa-cart-shopping text-white"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+
+
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 style="text-align: center;"><hr> Women's Necklace<hr></h3>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="row" id="content_necklace" style="box-shadow: 0px 0px 5px 5px rgb(231, 230, 230);">
+
+        </div>
+    </div>
+    <!-- --------------Cart Modal Start --------------->
+
+
+  <div class="modal fade mt-auto" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true" >
+  <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content" style="background-color:white">
+          <div class="modal-header">
+              <h5 class="modal-title ms-auto mt-0" id="exampleModalLabel">My Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body mt-0">
+
+          </div>
+          <div class="modal-footer">
+              <input type="button" class="btn text-white fw-bold" style="background:hsla(95, 97%, 45%, 0.953);"
+                  value="Checkout">
+              <input type="button" class="btn text-white fw-bold" style="background:hsla(95, 97%, 45%, 0.953);"
+                  value="View Cart">
+              <span class="ms-5">Total : <span style='position:relative;'>&#8377; </span><input
+                      style="border:none" class="total w-25" type="number" value="0" readonly /></span>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- --------------Cart Modal End --------------->
+<script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./jewellery.js"></script>
+    <!-- <script src="./js/jquery.js"></script> -->
+    <!-- <script src="electronic.js"></script> -->
+</body>
+
+</html>

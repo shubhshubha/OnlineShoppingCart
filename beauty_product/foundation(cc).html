@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Products</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <style>
+       * {
+                margin: 0px;
+                padding: 0px;
+                
+             }
+            #backimg
+            {
+                background-image: url(./beauty_images/background.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                min-height: 500px;
+            }
+            #backimg1
+            {
+                background-color: rgba(0, 0, 0, 0.646);
+                color: white;
+                min-height: 500px;
+                
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- // background-start -->
+        <div class="row">
+            <div class="col-sm-12" id="backimg">
+                <div class="row pt-5" id="backimg1">
+                    <div class="col-sm-3" ></div>
+                        <div class="col-sm-6" style="text-align: center;">
+                            <span style="font-size: 5vh;font-weight: bold">Discover Most Popular Categories<br> Of <span class="clr">Beauty And Fashion</span></span>
+                            <hr style="height: 2px;" class="mt-5">
+                            <span>A subset of cosmetics is called "make-up," which refers primarily to coloring products intended to alter the user's appearance. Many manufacturers distinguish between decorative cosmetics and care cosmetics. Most cosmetics are distinguished by the area of the body intended for application. </span><br/><br/><br/><br/><br/>
+                            <a href="beauty.html"><button type="button" class="btn btn-outline-info">GO BACK</button> </a>
+                            <a id="btndrag"  href="#" tabindex="-1" data-bs-toggle="modal" data-bs-target="#cart-modal" ><button type="button" class="btn btn-outline-info">View <i
+                                class="fa-solid fa-cart-shopping text-white"></i></button></a>
+                        </div>
+                    <div class="col-sm-3">
+                        
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <!-- background end  -->
+        <div class="row" id="content">
+
+        </div>
+    </div>
+      <!-- --------------Cart Modal Start --------------->
+
+
+      <div class="modal fade mt-auto" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true" >
+      <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content" style="background-color:white">
+              <div class="modal-header">
+                  <h5 class="modal-title ms-auto mt-0" id="exampleModalLabel">My Cart</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body mt-0">
+  
+              </div>
+              <div class="modal-footer">
+                  <input type="button" class="btn text-white fw-bold" style="background:hsla(95, 97%, 45%, 0.953);"
+                      value="Checkout">
+                  <input type="button" class="btn text-white fw-bold" style="background:hsla(95, 97%, 45%, 0.953);"
+                      value="View Cart">
+                  <span class="ms-5">Total : <span style='position:relative;'>&#8377; </span><input
+                          style="border:none" class="total w-25" type="number" value="0" readonly /></span>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  
+  <!-- --------------Cart Modal End --------------->
+     <script src="./js/jquery.js"></script>
+   <script src="./js/bootstrap.min.js"></script>
+   <script src="./js/UI/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var found_obj = [{ id: 1, src: "beauty_images/cc1.jpg", name: "Lakme foundation", decs: "Some quick example text to build on ", price: 180,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular" },
+            { id: 2, src: "beauty_images/cc2.jpg", name: "Lakme foundation", decs: "abcd jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 1450, rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular"  },
+            { id: 3, src: "beauty_images/cc3.jpg", name: "Lakme foundation", decs: "efgh jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 200,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular" },
+            { id: 4, src: "beauty_images/cc4.jpg", name: "Lakme foundation", decs: "hijkl jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj ", price: 100,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular"  },
+            { id: 5, src: "beauty_images/cc5.jpg", name: "Lakme foundation", decs: "mnopq jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 1200, rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular"  },
+            { id: 6, src: "beauty_images/cc6.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 130,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular"  },
+            { id: 7, src: "beauty_images/cc7.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 150,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular"  },
+            { id: 8, src: "beauty_images/cc1.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 110, rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular" },
+            { id: 9, src: "beauty_images/cc2.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 110,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular"  },
+            { id: 10, src: "beauty_images/cc3.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 110, rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular" },
+            { id: 11, src: "beauty_images/cc4.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 1100, rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular" },
+            { id: 12, src: "beauty_images/cc5.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 110, rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular" },
+            { id: 13, src: "beauty_images/cc6.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 110,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular" },
+            { id: 14, src: "beauty_images/cc7.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 110, rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular" },
+            { id: 15, src: "beauty_images/cc1.jpg", name: "Lakme foundationg", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 110,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular" },
+            { id: 16, src: "beauty_images/cc2.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 110,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular"  },
+            { id: 17, src: "beauty_images/cc3.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 110,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular"  },
+            { id: 18, src: "beauty_images/cc4.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 110,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular"  },
+            { id: 19, src: "beauty_images/cc5.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 110,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular" },
+            { id: 20, src: "beauty_images/cc6.jpg", name: "Lakme foundation", decs: "rstuv jgnbjg jmnkh nkmhnk arr_objnvj jtnbj jtbj", price: 110,  rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular" }
+            ];
+
+            for (var i = 0; i < found_obj.length; i++) {
+                $("#content").append(
+                    "<div class='col-sm-3'>" +
+                    "<div class='card w-100 mt-5'>" +
+                    "<img src="+found_obj[i].src+" class='card-img-top' alt='...' height='170'>" +
+                    "<div class='card-body'>" +
+                    "<h5 class='card-title'>"+found_obj[i].name+"</h5>" +
+                    "<p class='card-text'>"+found_obj[i].decs+"</p>" +
+                    "<p class='card-text'> $"+found_obj[i].price+"</p>" +
+                    "<p class='card-text'><i class='"+found_obj[i].rating1+" fa-star'></i><i class='"+found_obj[i].rating2+" fa-star'></i><i class='"+found_obj[i].rating3+" fa-star'></i><i class='"+found_obj[i].rating4+" fa-star'></i><i class='"+found_obj[i].rating5+" fa-star'></i></p>" +
+                    "<a href='#' class='btn btn-primary add-to-cart'>Cart</a>" +
+                    "<div style='display:none'>" +
+                    "<input type='number' value="+found_obj[i].price+" class='uniquePrice' />" +
+                    "<input type='text' value="+found_obj[i].src+" class='uniqueSrc' />" +
+                    "<textarea class='uniqueName'>"+found_obj[i].name+"</textarea>" +
+                    "</div>" +
+                    "<a href='#' class='btn btn-primary mx-5'>Buy</a>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>");
+
+            }
+        });
+
+        
+     //cart management
+var cart = [];
+var cartData = localStorage.getItem('cart');
+var cartDataAsObject = JSON.parse(cartData);
+if(cartDataAsObject==null)
+{
+    cartAsString = JSON.stringify(cart);
+    localStorage.setItem('cart', cartAsString)
+}
+
+$(document).on("click", ".add-to-cart", function () {
+    var rupee = $(this).next().find('.uniquePrice').val();
+    var src =  $(this).next().find('.uniqueSrc').val();
+    var pname = $(this).next().find('.uniqueName').val();
+    var cartData = localStorage.getItem('cart')
+    var cartDataAsObject = JSON.parse(cartData);
+    if(cartDataAsObject==null)
+    {
+        cartAsString = JSON.stringify(cart);
+        localStorage.setItem('cart', cartAsString)
+        var cartData = localStorage.getItem('cart')
+        var cartDataAsObject = JSON.parse(cartData);
+        var index = cartDataAsObject.length;
+        for (var i = 0; i < index; i++) {
+            // console.log(cartDataAsObject[i])
+            cart[i] = cartDataAsObject[i];
+        }
+        cart[index] = { "src": src, "name": pname, "price": rupee, "qty": "1" }
+        cartAsString = JSON.stringify(cart);
+        localStorage.setItem('cart', cartAsString)
+    }
+    else{
+            var index = cartDataAsObject.length;
+            for (var i = 0; i < index; i++) {
+                // console.log(cartDataAsObject[i])
+                cart[i] = cartDataAsObject[i];
+            }
+            cart[index] = { "src": src, "name": pname, "price": rupee, "qty": "1" }
+            cartAsString = JSON.stringify(cart);
+            localStorage.setItem('cart', cartAsString)
+        }
+    
+
+});
+
+$(document).on("click", "#btndrag", function () {
+    var cartData = localStorage.getItem('cart')
+    var cartDataAsObject = JSON.parse(cartData);
+    var index = cartDataAsObject.length;
+    var obj = $("#cart-modal").children().find('.modal-body');
+    obj.html("");
+    var shopStatus=0;
+    for (var i = 0; i < index; i++) {
+        shopStatus=1;
+        obj.append("<div class='col-sm-12'>" +
+            "<div class='row ms-2 me-2 mt-4'>" +
+            "<div class='col-sm-4 d-flex justify-content-center align-items-center ' >" +
+            "<img src="+cartDataAsObject[i].src+" alt='' class='img-thumbnail' >" +
+            "</div>" +
+            "<div class='col-sm-8 d-flex justify-content-center flex-column mt-2 px-3 '>" +
+            "<div class='d-flex justify-content-between flex-row'>"+
+            "<span class='fw-bold'>"+cartDataAsObject[i].name+"</span>" +
+            "<span class='remove fw-bold text-danger' style='cursor:pointer'>Remove</span>" +
+            "</div>"+
+            "<p class='text-break text-start text-warp text-black-50'></p>" +
+            "<span >****************** &#8377; <span class='specificPrice'>"+cartDataAsObject[i].price+"</span></span>" +
+            "<div class='d-flex flex-row flex-wrap justify-content-between mt-2'>"+
+            "<select class='w-25 ms-1 quantity'>" +
+            "<option>0</option>" +
+            "<option>1</option>" +
+            "<option>2</option>" +
+            "<option>3</option>" +
+            " <option>4</option>" +
+            "<option>5</option>" +
+            "</select> " +
+            "Total: <span style='position:relative;left:8%;bottom:-3px;'>&#8377;</span><input type='number' class='totalSpecific w-25 text-center' value='0' style='border:none' readonly>"+
+            "</div>"+
+            "</div>" +
+            "</div>" +
+            "<hr/>"+
+            "</div>");
+    }
+
+    if(shopStatus==0){
+        obj.html("<h3 class='text-center'>Your cart is empty right now!<h3>"+
+                  "<div class='d-flex justify-content-center'><a href='index.html' class='btn btn-dark px-5'>Shop now</a></div>");
+                  obj.next().css('display','none');     
+    }
+    else{
+        obj.next().css('display','block');
+    }
+
+});
+
+//removing item
+$(document).on("click",".remove",function(){
+      var cartData = localStorage.getItem('cart')
+      var cartDataAsArrayOfObject = JSON.parse(cartData);
+      cartDataAsArrayOfObject.shift()
+      var cartData=JSON.stringify(cartDataAsArrayOfObject);
+      localStorage.setItem('cart',cartData);
+      $("#btndrag").click();
+});
+//scroll event
+window.addEventListener("scroll", function () {
+    $(".top-header").css("background-color", "rgba(0,0,0,0.7)");
+});
+
+
+
+//Managing Specific Total prize
+$(document).on("change",".quantity",function(){
+    var total=0;
+     var qty=parseInt($(this).val());//getting number of quanity
+     var spPrice=parseInt($(this).parent().prev().find('.specificPrice').text());//getting specific price
+     var price=qty*spPrice; //Total specific price
+     $(this).next().next().val(price); //Assigning Total specific price
+     var len=$(".totalSpecific").length;//counting the number of specificPrice
+     for(var i=0;i<len;i++)//Calculating total price
+     {
+           total+=parseInt($(".totalSpecific")[i].value)
+     }
+    
+    $('.total').val(total);
+}); 
+        
+        
+        
+              
+    </script>
+   
+</body>
+
+</html>

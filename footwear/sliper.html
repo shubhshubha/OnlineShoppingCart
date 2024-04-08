@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep_sliper</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--Bootstrape icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <style>
+.card{
+    
+    border-radius: 5px;
+
+    }
+  h5{
+    color: rgb(14, 55, 203);
+  }  
+    </style>
+</head>
+
+    <body>
+    <div class="container-fluid">
+        <!--navbar bar-->
+        <div class="row pb-2 bg-light">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">Home</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./all_product.html">All Product</a>
+                          </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./sandal.html">Sandal</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./sliper.html">Sliper</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./shoes.html">Shoes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a id="btndrag" data-bs-toggle="modal" data-bs-target="#cart-modal"
+                            class="nav-link bt text-white bg-secondary" href="#"
+                            style="border-radius:4px;">View <i
+                                class="fa-solid fa-cart-shopping text-white"></i></a>
+                    </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <div class="row" id="sliper">  </div>
+        
+    <!--footer-->
+    <div class="row">
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        <div class="container mt-3">
+          <!-- Footer -->
+          <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+              <!-- Section: Links -->
+              <section class="">
+                <!--Grid row-->
+                <div class="row">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                      Foot wear product
+                    </h6>
+                    <p>
+                      Here you can use rows and columns to organize your footer
+                      content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit.
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+  
+                  <hr class="w-100 clearfix d-md-none" />
+  
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                    <p>
+                      <a class="text-white" href="all_product.html">All Product footwear</a>
+                    </p>
+                    <p>
+                      <a class="text-white" href="sandal.html">Sandal</a>
+                    </p>
+                    <p>
+                      <a class="text-white" href="sliper.html">Sliper</a>
+                    </p>
+                    <p>
+                      <a class="text-white" href="shoes.html">Shoes</a>
+                    </p>
+                  </div>
+                  <!-- Grid column -->
+  
+                  <hr class="w-100 clearfix d-md-none" />
+  
+                  <!-- Grid column -->
+                  <hr class="w-100 clearfix d-md-none" />
+  
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p><i class="fas fa-home mr-3"></i> India, 10012, </p>
+                    <p><i class="fas fa-envelope mr-3"></i> deep@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> + 8052728629</p>
+                    <p><i class="fas fa-print mr-3"></i> + 9005375597</p>
+                  </div>
+                  <!-- Grid column -->
+  
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+  
+                    <!-- Facebook -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!"
+                      role="button"><i class="fab fa-facebook-f"></i></a>
+  
+                    <!-- Twitter -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!"
+                      role="button"><i class="fab fa-twitter"></i></a>
+  
+                    <!-- Google -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!"
+                      role="button"><i class="fab fa-google"></i></a>
+  
+                    <!-- Instagram -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!"
+                      role="button"><i class="fab fa-instagram"></i></a>
+  
+                    <!-- Linkedin -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!"
+                      role="button"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!"
+                      role="button"><i class="fab fa-github"></i></a>
+                  </div>
+                </div>
+                <!--Grid row-->
+              </section>
+              <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+  
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+              © 2023 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/">All Rights Reserved</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+        </div>
+        <!-- End of .container -->
+      </div>
+    </div>
+   <!-- --------------Cart Modal Start --------------->
+
+  <div class="modal fade mt-auto" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content" style="background-color:white">
+          <div class="modal-header">
+              <h5 class="modal-title ms-auto mt-0" id="exampleModalLabel">My Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body mt-0">
+
+          </div>
+          <div class="modal-footer">
+              <input type="button" class="btn text-white fw-bold" style="background:hsla(95, 97%, 45%, 0.953);"
+                  value="Checkout">
+              <input type="button" class="btn text-white fw-bold" style="background:hsla(95, 97%, 45%, 0.953);"
+                  value="View Cart">
+              <span class="ms-5">Total : <span style='position:relative;'>&#8377; </span><input
+                      style="border:none" class="total w-25" type="number" value="0" readonly /></span>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- --------------Cart Modal End --------------->
+   <script src="foot_Wear.js"></script>
+   
+</body>
+
+</html>

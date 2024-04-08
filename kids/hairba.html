@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids hairband Products</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+  
+    <!--font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+      <!-- nabar section -->
+<nav class="navbar navbar-expand-lg bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="clothing/l.png" alt="" height="50" width="60"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kids.html">Back</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cloth.html">cloths</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="hairba.html">Hair Band</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hairca.html">Hair care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kidtoys.html">Toys Products </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="luggege.html">Luggege product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wallet.html">Wallete product</a>
+            </li>
+            <li class="nav-item">
+              <a id="btndrag" data-bs-toggle="modal" data-bs-target="#cart-modal"
+                  class="nav-link bt text-white bg-secondary" href="#"
+                  style="border-radius:4px;">View <i
+                      class="fa-solid fa-cart-shopping text-white"></i></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 style="text-align: center;"><u><b>Kids hairband</b></u></h3>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="row" id="content" style="background-color:white;">
+            
+        </div>
+    </div>
+    
+    <script>
+
+
+$(document).ready(function () {
+            var kids_hband = [{ id: 1, src: "hairband/band1.webp", name: "Partysanthe", decs: "diamond korean  ",price: "510",dprice:"656",offer:"23% off", rating1: "fa-solid",rating2: "fa-solid",rating3: "fa-solid",rating4: "fa-regular",rating5: "fa-regular" },
+            { id: 2, src: "hairband/band9.JPG", name: "BabyMoon", decs: "diamond korean  ", price: "190",dprice:"2,999",offer:"41% off", rating1: "fa-solid",rating2: "fa-solid",rating3: "fa-solid",rating4: "fa-solid",rating5: "fa-solid"},
+            { id: 3, src: "hairband/band3.JPG", name: "BAKEFY", decs: " Analog Hair For ", price: "219",dprice:"319",offer:"23% off", rating1: "fa-solid",rating2: "fa-solid",rating3: "fa-solid",rating4: "fa-regular",rating5: "fa-regular" },
+            { id: 4, src: "hairband/band4.JPG", name: "Generic",decs: " Analog Hair For ", price: "610",dprice:"790",offer:"28% off", rating1: "fa-solid",rating2: "fa-solid",rating3: "fa-solid",rating4: "fa-regular",rating5: "fa-regular"},
+            { id: 5, src: "hairband/band5.JPG", name: "APSAMBR", decs: " Hair Scrunchies ", price: "199",dprice:"390",offer:"24% off",rating1: "fa-solid",rating2: "fa-solid",rating3: "fa-regular",rating4: "fa-regular",rating5: "fa-regular"},
+            { id: 6, src: "hairband/band12.webp", name: "Generic", decs: "diamond korean  ", price: "990",dprice:"1180",offer:"21% off", rating1: "fa-solid",rating2: "fa-solid",rating3: "fa-solid",rating4: "fa-solid",rating5: "fa-regular" },
+            { id: 7, src: "hairband/band7.JPG", name: "Rapidsflow", decs: " Analog Hair  ", price: "120",dprice:"250",offer:"34% off", rating1: "fa-solid",rating2: "fa-solid",rating3: "fa-solid",rating4: "fa-regular",rating5: "fa-regular"},
+            { id: 8, src: "hairband/band8.JPG", name: "PAKHIRA ", decs: " Analog Hair ", price: "290", dprice:"790",offer:"38% off",rating1: "fa-solid",rating2: "fa-solid",rating3: "fa-solid",rating4: "fa-solid",rating5: "fa-solid"},
+            { id: 9, src: "hairband/band2.JPG", name: "BEMBIKA", decs: " Analog Hair", price: "190",dprice:"380",offer:"21% off", rating1: "fa-solid",rating2: "fa-solid",rating3: "fa-solid",rating4: "fa-solid",rating5: "fa-regular" },
+            { id: 10, src: "hairband/band10.JPG", name: "FunBlast", decs: " Analog Hair  ", price: "990",dprice:"1080",offer:"21% off", rating1: "fa-solid",rating2: "fa-solid",rating3: "fa-solid",rating4: "fa-solid",rating5: "fa-regular" },
+            { id: 11, src: "hairband/band11.JPG", name: "BabyMoon", decs: " Analog Hair ", price: "590",dprice:"980",offer:"21% off", rating1: "fa-solid",rating2: "fa-solid",rating3: "fa-solid",rating4: "fa-solid",rating5: "fa-regular" },
+            { id: 12, src: "hairband/band6.JPG", name: "BabyMoon", decs: " Analog Hair ", price: "599",dprice:"980",offer:"21% off", rating1: "fa-solid",rating2: "fa-solid",rating3: "fa-solid",rating4: "fa-solid",rating5: "fa-regular" },
+            ];
+
+            for (var i = 0; i < kids_hband.length; i++) {
+                $("#content").append(
+                    "<div class='col-sm-2 mt-3 mb-3'>" +
+                    "<div class='card w-100' style='width: 22rem;'>" +
+                    "<img style='box-shadow:3px 3px 3px 0px black' src="+kids_hband[i].src+" class='w-100%' height='200px' alt='...'>" +
+                    "<div class='card-body'>" +
+                    "<h5 class='card-title'>"+kids_hband[i].name+"</h5>" +
+                    "<span class='card-text'>"+kids_hband[i].decs+"</spn>" +
+                    "<span class='card-text'><span>Special Price :</span><b> ₹ "+kids_hband[i].price+"</b><br><span>Discount : <s>₹ "+kids_hband[i].dprice+"</s></span> <span style='color:green;'>"+kids_hband[i].offer+"</span></p>" +
+                    "<span class='card-text'><i class='"+kids_hband[i].rating1+" fa-star'></i><i class='"+kids_hband[i].rating2+" fa-star'></i><i class='"+kids_hband[i].rating3+" fa-star'></i><i class='"+kids_hband[i].rating4+" fa-star'></i><i class='"+kids_hband[i].rating5+" fa-star'></i></span>" +
+                    "<a href='#' class='btn btn-primary ms-3'>CART</a> "+"  "+
+                    "<a href='#' class='btn btn-primary me-'>BUY</a>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>");
+            }
+        });
+
+
+
+
+    </script>
+    <!-- <script src="./js/jquery.js"></script> -->
+    <!-- <script src="electronic.js"></script> -->
+</body>
+
+</html>

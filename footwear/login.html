@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep_login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--Bootstrape icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="js/jquerUI/jquery-ui.min.js"></script>
+    <script src="js/jquerUI/jquery-ui.min.css"></script>
+    <title>foot_Wear_Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--Bootstrape icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                //validate email
+                var status = true;
+                var email, pass;
+                email = $("#em").val();
+                pass = $("#pass").val();
+                $(".err").remove();
+
+                if (email.length == 0) {
+                    $("#em").after("<span class='err'>Please enter email Id</span>");
+                    status = false;
+                }
+                //validaet password
+                if (pass.length == 0) {
+                    $("#pass").after("<span class='err'>Please enter password</span>");
+                    status = false;
+                }
+                else if (pass.length < 8) {
+                    $("#pass").after("<span class='err'>Minimum 8 characters are required in password</span>");
+                    status = false;
+                }
+                else if (pass.length > 8) {
+                    $("#pass").after("<span class='err'>Characters should not be more than 8 characters</span>");
+                    status = false;
+                }
+                //check box validation
+                return status;
+            });
+        });
+
+
+        //function to evaluate points of password
+        function evauatePoints(mystr) {
+            var points = 0, ascii = 0, lflag = 0, uflag = 0, dflag = 0, sflag = 0, x;
+            for (x = 0; x < mystr.length; x++) {
+                ascii = mystr.charCodeAt(x);
+                if (ascii >= 65 && ascii <= 90) {
+                    if (uflag == 0) {
+                        uflag = 1;
+                        points++;
+                    }
+                }
+                else if (ascii >= 97 && ascii <= 122) {
+                    if (lflag == 0) {
+                        lflag = 1;
+                        points++;
+                    }
+                }
+                else if (ascii >= 48 && ascii <= 57) {
+                    if (dflag == 0) {
+                        dflag = 1;
+                        points++;
+                    }
+                }
+                else if (sflag == 0) {
+                    sflag = 1;
+                    points++;
+                }
+            }
+            if (mystr.length >= 8)
+                points = points + 2;
+            return points;
+        }
+    </script>
+    <style>
+        .err {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 "></div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6 p-0">
+                        
+                        <img src="foot_Wear/loginpic.jpg" class="rounded mx-auto d-block card-img-top" alt="...">
+
+                    </div>
+                    <div class="col-sm-6 p-0" style="background-color:rgb(150, 191, 213);">
+                        <h2 class="text-center mt-3">Login Here</h2>
+                        <form class="px-5 mt-4">
+                            <div class="mb-3">
+                              <label for="em" class="form-label"style="font-size
+                              :20px">Email address</label>
+                              <input type="email" class="form-control" id="em" aria-describedby="emailHelp" placeholder="Enter email Id">
+                              <div id="emailHelp" class="form-text"></div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="pass" class="form-label"style="font-size
+                              :20px">Password</label>
+                              <input type="password" class="form-control" id="pass" placeholder="Enter password">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1"style="font-size
+                              :20px">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="btn">Submit</button><br>
+                            
+                          </form>
+                          <p style="text-align: center;" class="mt-4 fw-bold"><a href="#" style="color: rgb(43, 28, 212); margin-left: 5px;"> New Registration here</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 "></div>
+        </div>
+    </div>
+</body>
+
+</html>

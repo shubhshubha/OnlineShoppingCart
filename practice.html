@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //  var cart=[];
+      // var cartData=JSON.stringify(cart);
+      // localStorage.setItem('cart',cartData);
+
+      var cartData = localStorage.getItem('cart')
+      var cartDataAsArrayOfObject = JSON.parse(cartData);
+      console.log(cartDataAsArrayOfObject)
+      cartDataAsArrayOfObject.shift()
+      console.log(cartDataAsArrayOfObject)
+      var cartData=JSON.stringify(cartDataAsArrayOfObject);
+      localStorage.setItem('cart',cartData);
+         
+     
+    </script>
+</body>
+</html>

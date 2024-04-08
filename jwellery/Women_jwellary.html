@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Jewellery set</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <!--font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 style="text-align: center;"><hr> Women's Jewellery Set<hr></h3>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="row" id="content" style="box-shadow: 0px 0px 5px 5px rgb(231, 230, 230);">
+
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var arr_obj = [{ id: 1, src: "images/women_jwellary_sets/1.jpg", name: "brado jewellery ", decs: "Brass Gold-plated White Jewel Set  (Pack of 1)", price: "350", rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-solid", rating4: "fa-regular", rating5: "fa-regular", cut: 120, off: "32% off" },
+            { id: 2, src: "images/women_jwellary_sets/2.jpg", name: "DIKSHA COLLECTION ", decs: "Alloy Gold-plated Gold Jewel Set  (Pack of 1)", price: "1,253", rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-solid", rating4: "fa-solid", rating5: "fa-solid", cut: 1391, off: "10% off" },
+            { id: 3, src: "images/women_jwellary_sets/3.jpg", name: "Sukkhi ", decs: "Alloy Gold-plated Gold Jewel Set  (Pack of 2)", price: "812", rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-solid", rating4: "fa-regular", rating5: "fa-regular", cut: 854, off: "5% off" },
+            { id: 4, src: "images/women_jwellary_sets/4.jpg", name: "Rhymee", decs: "Alloy Rhodium White Jewel Set  (Pack of 1)", price: "1,238", rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-solid", rating4: "fa-regular", rating5: "fa-regular", cut: 1390, off: "11% off" },
+            { id: 5, src: "images/women_jwellary_sets/5.jpg", name: "z.n. fashions", decs: "Trending and Attractive Pearl", price: "913", rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-regular", rating4: "fa-regular", rating5: "fa-regular", cut: 960, off: "5% off" },
+            { id: 6, src: "images/women_jwellary_sets/6.jpg", name: "brado jewellery", decs: "Brass Gold-plated Rose Gold Jewel Set  (Pack of 1)", price: "947", rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-solid", rating4: "fa-solid", rating5: "fa-regular", cut: 1018, off: "7% off" },
+            { id: 7, src: "images/women_jwellary_sets/7.jpg", name: "RJ", decs: "Brass Gold-plated White, Red Jewel Set  (Pack of 1)", price: "685", rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-solid", rating4: "fa-solid", rating5: "fa-solid", cut: 728, off: "6% off" },
+            { id: 8, src: "images/women_jwellary_sets/8.jpg", name: "brado jewellery", decs: "Brass, Stone, Crystal,Stainless Steel", price: "247", rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-solid", rating4: "fa-solid", rating5: "fa-solid", cut: 1999, off: "87% off" },
+            { id: 9, src: "images/women_jwellary_sets/9.jpg", name: "Rhymee",decs:"Alloy Rhodium White Jewel Set  (Pack of 1)", price: "685", rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-solid", rating4: "fa-solid", rating5: "fa-solid", cut: 728, off: "6% off" },
+            { id: 10, src:"images/women_jwellary_sets/10.jpg", name: "brado jewellery", decs: "Brass, Stone, Crystal,Stainless Steel", price: "247", rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-solid", rating4: "fa-solid", rating5: "fa-solid", cut: 1999, off: "87% off" },
+            { id: 11, src:"images/women_jwellary_sets/11.jpg", name: "keymax", decs:"Copper Gold-plated Gold Jewel Set  (Pack of 1)", price: "685", rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-solid", rating4: "fa-solid", rating5: "fa-solid", cut: 728, off: "6% off" },
+            { id: 12, src:"images/women_jwellary_sets/8.jpg", name: "brado jewellery",decs:"Brass, Stone, Crystal,Stainless Steel", price: "247", rating1: "fa-solid", rating2: "fa-solid", rating3: "fa-solid", rating4: "fa-solid", rating5: "fa-solid", cut: 1999, off: "87% off" }
+
+            ];
+        
+            for (var i = 0; i < arr_obj.length; i++) {
+                $("#content").append(
+                    "<div class='col-sm-2 d-flex justify-content-center'>" +
+                    "<div class='card mt-3'>" +
+                    "<div class='card-img'><img  src=" + arr_obj[i].src + " class='w-100' alt='...' height='160'>" +
+                    "<div class='card-body'>" +
+                    "<h5 class='card-title'>" + arr_obj[i].name + "</h5>" +
+                    "<span class='card-text'>" + arr_obj[i].decs + "</span>" +
+                    "<span class='card-text'><span style='color: green;'><br><b>Special price</b></span><h4> ₹ " + arr_obj[i].price + "</h4>Discount:  <del>₹" + arr_obj[i].cut + "</del><span  style='color: green;'><b> " + arr_obj[i].off + "</b></span></span>" + "<span class='card-text' style='color: green;'><br><i class='" + arr_obj[i].rating1 + " fa-star'></i><i class='" + arr_obj[i].rating2 + " fa-star'></i><i class='" + arr_obj[i].rating3 + " fa-star'></i><i class='" + arr_obj[i].rating4 + " fa-star'></i><i class='" + arr_obj[i].rating5 + " fa-star'></i></span>" +
+                    "<div class='d-flex flex-wrap justify-content-center mt-2'>" +
+                    "<a href='#' class='btn btn-primary '>ADD TO CARDS</a>" +
+                    "<a href='#' class='btn btn-primary mt-2'>BUY NOW</a>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>");
+
+            }
+        });
+
+
+    </script>
+    <!-- <script src="./js/jquery.js"></script> -->
+    <!-- <script src="electronic.js"></script> -->
+</body>
+
+</html>

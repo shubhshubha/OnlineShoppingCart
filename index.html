@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link href="./assets/js/UI/jquery-ui.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="top-right-round"></div>
+        <div class="top-left-round"></div>
+       <div class="row fixed-top">  <!--  header Start -->
+            <div class="col-sm-12 top-header">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-white" href="#">Dream</a>
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                            <span class="" data-bs-target="#offcanvasExample">&#9776</span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Collection
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <!-- <li><a class="dropdown-item" href="./girls_clothes/main.html">Women dress collection</a></li> -->
+                                        <li><a class="dropdown-item" href="./mens/mens.html">Men's dress collection</a></li>
+                                        <li><a class="dropdown-item" href="./satyam_watch/satyam.html">Watch collection</a></li>
+                                        <li><a class="dropdown-item" href="./sportshub_abhishek/main.html">Sport collection</a></li>
+                                        <li><a class="dropdown-item" href="./footwear/deep_index.html">Shoes collection</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Catalog
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./beauty_product/beauty.html">Beauty Products</a></li>
+                                        <li><a class="dropdown-item" href="./jwellery/jewellery.html">Jewellery</a></li>
+                                        <li><a class="dropdown-item" href="./electronics/electronics_index.html">Electonics Gadgets</a></li>
+                                        <li><a class="dropdown-item" href="./kids/kids.html">Kids Accessories</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="btndrag" data-bs-toggle="modal" data-bs-target="#cart-modal"
+                                        class="nav-link bt text-white bg-secondary" href="#"
+                                        style="border-radius:4px;">View <i
+                                            class="fa-solid fa-cart-shopping text-white"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div><!--Header  End -->
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- <img src="./assets/images/index/diwali_banner/dwli7.png"  style="position: absolute;top:15%;width: 300px;"> -->
+
+                <div class="" id="body_content" style="position: relative;z-index:12;margin-top: 15%;">
+                    <div class="d-flex justify-content-center"><img src="./assets/images/index/diwali_banner/dwli6.png" class="w-25"></div>
+                    <h2 class="h1 text-center text-white" data-aos='zoom-in' data-aos-duration='3000'>Discover The
+                        Perfect
+                        Balance Of Hospitality,Luxury And Comfort.</h2>
+                    <p class="text-center text-white" style="font-size: 1.2rem;" data-aos='zoom-in'
+                        data-aos-duration='3000'>We are focused on providing clients with high level of comfort
+                        <br />and excellent affordable rates.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+         <!-- ========Sponsard By Start=======-->
+         <div class="row mt-5" style="position: relative;">
+            <!-- <div class="col-sm-2"></div> -->
+            <div class="col-sm-12" data-aos='fade-up' data-aos-duration='2000'>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active " >
+                            <div style="height:400px;width:100%;background: rgba(255, 255, 255, 0.05);box-sizing: border-box;box-shadow: 0 10px 25px rgba(0,0,0,0.2);border-radius: 10px;" class="d-flex justify-content-center">
+                                <h2 class="text-white" style="position: relative;right:3%;">Sponsard By</h2>
+                                <img src="./assets/images/index/diwali_banner/dwli5.png" class="img-fluid w-25" style="position: relative;right:10%;">
+                                <img src="./assets/images/index/bike/bike3.png" class="img-fluid w-50" >
+                            </div>
+                             
+                            
+                        </div>
+                        <div class="carousel-item ">
+                            <div style="height:400px;width:100%;background: rgba(255, 255, 255, 0.05);box-sizing: border-box;box-shadow: 0 10px 25px rgba(0,0,0,0.2);border-radius: 10px;" class="d-flex justify-content-center">
+                                <h2 class="text-white" style="position: relative;right:3%;">Sponsard By</h2>
+                                <img src="./assets/images/index/diwali_banner/dwli5.png" class="img-fluid w-25" style="position: relative;right:10%;">
+                                <img src="./assets/images/index/bike/bike2.png" class="img-fluid w-50" >
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="col-sm-2"></div> -->
+        </div>
+        <!-- ========Sponsard By End=======-->
+        <div class="row mt-5">
+            <div class="col-sm-12">
+                <h3 class="text-center text-white">Our Trending Products</h3>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5" id="men_shoes_cards">
+
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <img src="./assets/images/index/diwali_banner/dwli4.png" class="w-25 img-fluid">
+            </div>
+        </div>
+        <!-- ========bags started =======-->
+        <div class="row " style="position: relative;">
+            <div class="col-sm-4 d-flex-justify-content-center align-items-center">
+                <div class="mySwiper1">
+                    <!-- <swiper-container init="false"  class="swiper mySwiper1"> -->
+                    <div class="swiper-wrapper">
+                        
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- </swiper-container> -->
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex-justify-content-center align-items-center">
+                <div class="mySwiper2">
+                    <!-- <swiper-container init="false"  class="swiper mySwiper1"> -->
+                    <div class="swiper-wrapper">
+                        
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- </swiper-container> -->
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex-justify-content-center align-items-center">
+                <div class="mySwiper3">
+                    <!-- <swiper-container init="false"  class="swiper mySwiper1"> -->
+                    <div class="swiper-wrapper">
+                        
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- </swiper-container> -->
+                </div>
+            </div>
+        </div>
+         <!-- ========bags End=======-->
+
+         
+
+    </div>
+    
+    <!-- --------------Cart Modal Start --------------->
+
+    <div class="modal fade mt-auto" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content" style="background-color:white">
+                <div class="modal-header">
+                    <h5 class="modal-title ms-auto mt-0" id="exampleModalLabel">My Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mt-0">
+
+                </div>
+                <div class="modal-footer">
+                    <a href="checkOutPage.html"><input type="button" class="CheckoutBtn btn text-white fw-bold" style="background:hsla(95, 97%, 45%, 0.953);"
+                        value="Checkout"></a>
+                    <input type="button" class="btn text-white fw-bold" style="background:hsla(95, 97%, 45%, 0.953);"
+                        value="View Cart">
+                    <span class="ms-5">Total : <span style='position:relative;'>&#8377; </span><input
+                            style="border:none" class="total w-25" type="number" value="0" readonly /></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------Cart Modal End --------------->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/UI/jquery-ui.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js/effect.js"></script>
+
+    <script>
+        // $(document).ready(function(){
+        //       $(document).on("mouseover",".card",function(){
+        //         $(this).find(".btn-group").css("opacity","1");
+        //       //  $(this).find(".vision-body").css("transform","translateY(-50px)");
+        //         // $(this).find(".card-img").css("display","none");
+        //       });
+        // });
+        // $(document).ready(function(){
+        //       $(document).on("mouseout",".card",function(){
+        //         $(this).find(".btn-group").css("opacity","0");
+        //         // $(this).find(".card-img").css("display","block");
+        //       });
+        // });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

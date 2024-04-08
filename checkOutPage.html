@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link href="./assets/js/UI/jquery-ui.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- <div class="top-right-round"></div>
+        <div class="top-left-round"></div> -->
+        <div class="row fixed-top"> <!--  header Start -->
+            <div class="col-sm-12 top-header">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-white" href="#">Dream</a>
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                            <span class="" data-bs-target="#offcanvasExample">&#9776</span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Collection
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Women dress collection</a></li>
+                                        <li><a class="dropdown-item" href="./mens/mens.html">Men's dress collection</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./satyam_watch/satyam.html">Watch
+                                                collection</a></li>
+                                        <li><a class="dropdown-item" href="#">Sport collection</a></li>
+                                        <li><a class="dropdown-item" href="./footwear/deep_index.html">Shoes
+                                                collection</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Catalog
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./beauty_product/beauty.html">Beauty
+                                                Products</a></li>
+                                        <li><a class="dropdown-item" href="./jwellery/jewellery.html">Jewellery</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="./electronics/electronics_index.html">Electonics Gadgets</a></li>
+                                        <li><a class="dropdown-item" href="./kids/kids.html">Kids Accessories</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div><!--Header  End -->
+        <div class="row">
+            <div class="col-sm-7 p-5 text-white d-flex justify-content-center flex-column"
+                style="position: relative;z-index:12;margin-top: 15%;">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h2>Billing Details</h2>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-sm-6 d-flex justify-content-center">
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-sm-12 d-flex justify-content-center">
+                        <input type="text" class="form-control" placeholder="Your email">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-sm-12 d-flex justify-content-center">
+                        <input type="text" class="form-control" placeholder="Company name (optional)">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-sm-12 d-flex justify-content-center">
+                        <input type="text" class="form-control" placeholder="Address">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-sm-6 d-flex justify-content-center">
+                        <input type="text" class="form-control" placeholder="Town / City">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" placeholder="Passcode">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-sm-12 d-flex justify-content-center">
+                        <input type="text" class="form-control" placeholder="Mobile NUmber">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 p-5 text-white" style="position: relative;z-index:12;margin-top: 15%;">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h2>Order Item</h2>
+                    </div>
+                </div>
+                <div id="cartItem" class="row">
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 d-flex flex-row">
+                        <span>Total : &#8377; </span>
+                        <span class="ms-5"><span style='position:relative;'></span><input style="border:none"
+                                class="total w-50 form-control" type="number" value="0" id="t" readonly /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-12 text-center text-white">
+                        <h2>Shipping Details</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 p-3 text-white">
+                        <table class="table table-hover table-bordered text-white h-100" style="font-size: 14px;">
+                            <tr>
+                                <td><i class="fa-solid fa-circle me-3"></i>Standard Shipping</td>
+                                <td>Delivery in 5 - 7 working days</td>
+                                <td>$8.00</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-circle me-3"></i>Express Shipping</td>
+                                <td>Delivery in 3 - 5 working days</td>
+                                <td>$18.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa-solid fa-circle me-3"></i>  Free Shipping</td>
+                                <td>Living won't the He one every subdue meat replenish face was you morning firmament darkness.</td>
+                                <td>$0.00</td>
+                            </tr>
+                         </table>
+                    </div>
+                </div>
+                 
+            </div>
+            <div class="col-sm-5">
+                <div class="row">
+                    <div class="col-sm-12 text-center text-white">
+                        <h2>Your Bill</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 p-3 d-flex justify-content-center">
+                        <table class="table table-bordered table-hover text-white w-50">
+                            <tr>
+                              <td><span class="me-5">Subtotal</span>&#8377; <span class="ms-5" id="subTotal">00.00</span></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="me-5">Tax &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="ms-5">&#8377; 00.00</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span class="me-5">Shipping</span><span class="ms-5">&#8377; 75</span>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td class="text-wrap text-white" style="font-size: 12px;">
+                                    Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bg-light text-dark text-center">Place Order</td>
+                            </tr>
+                          </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <!-- --------------Cart Modal Start --------------->
+
+    <div class="modal fade mt-auto" id="cart-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content" style="background-color:white">
+                <div class="modal-header">
+                    <h5 class="modal-title ms-auto mt-0" id="exampleModalLabel">My Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mt-0">
+
+                </div>
+                <div class="modal-footer">
+                    <a href="checkOutPage.html" class="CheckoutBtn btn text-white fw-bold"
+                        style="background:hsla(95, 97%, 45%, 0.953);">Checkout</a>
+                    <input type="button" class="btn text-white fw-bold" style="background:hsla(95, 97%, 45%, 0.953);"
+                        value="View Cart">
+                    <span class="ms-5">Total : <span style='position:relative;'>&#8377; </span><input
+                            style="border:none" class="total w-25" type="number" value="0" readonly /></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------Cart Modal End --------------->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/UI/jquery-ui.min.js"></script>
+    <!-- <script src="./assets/js/index.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js/effect.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var cartData = localStorage.getItem('cart')
+            var cartDataAsObject = JSON.parse(cartData);
+            var index = cartDataAsObject.length;
+            var obj = $("#cartItem");
+            obj.html("");
+            var shopStatus = 0;
+            for (var i = 0; i < index; i++) {
+                shopStatus = 1;
+                obj.append("<div class='col-sm-12'>" +
+                    "<div class='row ms-2 me-2 mt-4'>" +
+                    "<div class='col-sm-4 d-flex justify-content-center align-items-center ' >" +
+                    "<img src=" + cartDataAsObject[i].src + " alt='' class='img-thumbnail' style='height:70px;width:70px' >" +
+                    "</div>" +
+                    "<div class='col-sm-8 d-flex justify-content-center flex-column mt-2 px-3 '>" +
+                    "<div class='d-flex justify-content-between flex-row'>" +
+                    "<span class='fw-bold'>" + cartDataAsObject[i].name + "</span>" +
+                    "</div>" +
+                    "<p class='text-break text-start text-warp text-black-50'></p>" +
+                    "<span >****************** &#8377; <span class='specificPrice'>" + cartDataAsObject[i].price + "</span></span>" +
+                    "<div class='d-flex flex-row flex-wrap justify-content-between mt-2'>" +
+                    "<select class='w-25 ms-1 quantity'>" +
+                    "<option>0</option>" +
+                    "<option>1</option>" +
+                    "<option>2</option>" +
+                    "<option>3</option>" +
+                    " <option>4</option>" +
+                    "<option>5</option>" +
+                    "</select> " +
+                    "Total: <span style='position:relative;left:8%;bottom:-3px;'>&#8377;</span><input type='number' class='totalSpecific w-25 text-center' value='0' style='border:none' readonly>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+                    "<hr/>" +
+                    "</div>");
+            }
+
+            if (shopStatus == 0) {
+                obj.html("<h3 class='text-center'>Your cart is empty right now!<h3>" +
+                    "<div class='d-flex justify-content-center'><a href='index.html' class='btn btn-dark px-5'>Shop now</a></div>");
+                obj.next().css('display', 'none');
+            }
+            else {
+                obj.next().css('display', 'block');
+            }
+
+        });
+      
+        //Managing Specific Total prize
+        $(document).on("change",".quantity",function(){
+    var total=0;
+     var qty=parseInt($(this).val());//getting number of quanity
+     var spPrice=parseInt($(this).parent().prev().find('.specificPrice').text());//getting specific price
+     var price=qty*spPrice; //Total specific price
+     $(this).next().next().val(price); //Assigning Total specific price
+     var len=$(".totalSpecific").length;//counting the number of specificPrice
+     for(var i=0;i<len;i++)//Calculating total price
+     {
+           total+=parseInt($(".totalSpecific")[i].value)
+     }
+    
+    $('.total').val(total);
+    $("#subTotal").text(total);
+});
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
